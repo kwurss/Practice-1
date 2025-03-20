@@ -6,12 +6,7 @@ int main() {
     printf("Введите целое число: ");
     scanf("%d", &number);
 
-    if (number % 2 == 0) {
-        printf("Число %d - четное\n", number);
-    } 
-    else {
-        printf("Число %d - нечетное\n", number);
-    }
+    printf("Число %d является %s.\n", number, (number % 2 == 0) ? "четным" : "нечетным");
 
     return 0;
 }
